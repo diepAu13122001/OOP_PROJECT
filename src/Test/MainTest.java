@@ -21,7 +21,7 @@ import SupportClasses.*;
 public class MainTest {
 	public static void main(String[] args) throws IOException {
 		// check main home view
-		MainHomewController branchController = new MainHomewController();
+		MainHomeController branchController = new MainHomeController();
 	
 	}
 }

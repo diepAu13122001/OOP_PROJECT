@@ -15,7 +15,7 @@ import Personel_Worker.*;
 
 public class MainHomeView extends JFrame implements ActionListener {
 
-	private MainHomewController control;
+	private MainHomeController control;
 
 	private JButton bnCustomer;
 	private JButton bnEmployee;
@@ -26,14 +26,14 @@ public class MainHomeView extends JFrame implements ActionListener {
 	private JLabel note;
 	private JPanel panel;
 
-	public MainHomeView(MainHomewController control) {
+	public MainHomeView(MainHomeController control) {
 		this.control = control;
 	}
 
 // tao layout chua cac component cho panel
 	public void createView() {
 		// set up for frame
-		ImageIcon appLogo = new ImageIcon("logoCircle100.png");
+		ImageIcon appLogo = new ImageIcon("src/logoCircle100.png");
 		setTitle("Bubble Tea App");
 		setBounds(100, 100, 1000, 563);
 		setUndecorated(true);
@@ -41,7 +41,7 @@ public class MainHomeView extends JFrame implements ActionListener {
 		setIconImage(appLogo.getImage());
 
 		// set background
-		ImageIcon back = new ImageIcon("logo1000x563.jpg");
+		ImageIcon back = new ImageIcon("src/logo1000x563.jpg");
 		background = new JLabel(back);
 		background.setBounds(0, 0, 1000, 563);
 
@@ -145,7 +145,7 @@ public class MainHomeView extends JFrame implements ActionListener {
 		return panelLayout;
 	}
 
-	public void gotoOrderView() {
+	public void gotoOrderView() throws IOException {
 		dispose();
 		OrderModel model = new OrderModel();
 		OrderController controller = new OrderController(model);
@@ -175,7 +175,12 @@ public class MainHomeView extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == bnCustomer) {
-			gotoOrderView();
+			try {
+				gotoOrderView();
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 		}
 		if (e.getSource() == bnEmployee) {
 			gotoEmployeeSigninView();

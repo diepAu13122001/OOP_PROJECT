@@ -504,7 +504,7 @@ public class PaymentView extends JFrame implements ActionListener {
 			}
 			if (result == JOptionPane.NO_OPTION) {
 				dispose();
-				MainHomewController homeController = new MainHomewController();
+				MainHomeController homeController = new MainHomeController();
 			}
 		}
 		if (e.getSource() == previousButton) {

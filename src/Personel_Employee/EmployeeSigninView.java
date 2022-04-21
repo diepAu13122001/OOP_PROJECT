@@ -181,7 +181,7 @@ public class EmployeeSigninView extends JFrame implements ActionListener {
 			}
 		}
 		if (e.getSource() == bnExit) {
-			new MainHomeView(new MainHomewController()).setVisible(true);
+			new MainHomeView(new MainHomeController()).setVisible(true);
 			dispose();
 		}
 	}

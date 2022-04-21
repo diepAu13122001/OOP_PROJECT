@@ -30,7 +30,7 @@ public class OrderController {
 
 	public void backHome() {
 		view.dispose();
-		new MainHomewController();
+		new MainHomeController();
 	}
 
 	public ArrayList<String[]> getComBoList() {
