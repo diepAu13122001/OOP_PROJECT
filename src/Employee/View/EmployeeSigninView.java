@@ -5,9 +5,13 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.HashMap;
 
+import Employee.Controller.EmployeeHomeController;
 import Employee.Controller.EmployeeSigninController;
+import Employee.Model.EmployeeHomeModel;
 import Employee.Model.EmployeeSigninModel;
 import Store.Controller.MainHomeController;
+import Worker.Controller.TimekeepingController;
+import Worker.Model.TimekeepingModel;
 
 public class EmployeeSigninView extends JFrame implements ActionListener {
 
@@ -159,20 +163,24 @@ public class EmployeeSigninView extends JFrame implements ActionListener {
             if (loginInfo.containsKey(idInput)) {
                 if (loginInfo.get(idInput).equals(passInput)) {
                     if (model.getPosition(idInput).equals("KT")) {
-                        // open Employee_Marketing_Home_View
+                        EmployeeHomeModel model = new EmployeeHomeModel();
+                        EmployeeHomeController controller = new EmployeeHomeController(model);
                         dispose();
                     }
                     if (model.getPosition(idInput).equals("DV")) {
-                        // open Employee_HRM_Home_View
+                        EmployeeHomeModel model = new EmployeeHomeModel();
+                        EmployeeHomeController controller = new EmployeeHomeController(model);
                         dispose();
                     }
                     if (model.getPosition(idInput).equals("CK")) {
-                        // open Employee_MenuManager_Home_View
+                        EmployeeHomeModel model = new EmployeeHomeModel();
+                        EmployeeHomeController controller = new EmployeeHomeController(model);
                         dispose();
                     }
                     if (model.getPosition(idInput).equals("PV") || model.getPosition(idInput).equals("PC")
                             || model.getPosition(idInput).equals("BV") || model.getPosition(idInput).equals("VS")) {
-                        // open time keeping
+                        TimekeepingModel model = new TimekeepingModel();
+                        TimekeepingController controller  = new TimekeepingController(model);
                         dispose();
                     }
                 }

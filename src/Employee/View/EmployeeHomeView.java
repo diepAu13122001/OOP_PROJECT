@@ -42,8 +42,7 @@ public class EmployeeHomeView extends JFrame implements ActionListener {
 	}
 
 	public void createView() {
-
-		ImageIcon appLogo = new ImageIcon("logoCircle100.png");
+		ImageIcon appLogo = new ImageIcon("src/logoCircle100.png");
 		setTitle("Employee management");
 		setBounds(0, 0, 1400, 780);
 		setIconImage(appLogo.getImage());
