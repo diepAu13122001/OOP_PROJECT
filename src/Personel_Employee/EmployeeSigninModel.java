@@ -40,4 +40,10 @@ public class EmployeeSigninModel {
 		return positionListList.get(idKey);
 	}
 
+	public static void main(String[] args) throws IOException {
+		EmployeeSigninModel model = new EmployeeSigninModel("D:\\code\\subject\\Project_OOP\\FileExcel\\Cus+Staff.xlsx", 1, 1, 12,
+				7);
+		System.out.println(model.getLoginInfo());
+		System.out.println(model.getPosition("1151010001"));
+	}
 }

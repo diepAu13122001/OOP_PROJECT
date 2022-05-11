@@ -68,7 +68,7 @@ public class PaymentView extends JFrame implements ActionListener {
 		timeNdateLabel.setText("hh:mm:ss  dd/mm/yyyy");
 
 		exitButton.setBackground(new Color(255, 204, 204));
-		exitButton.setIcon(new ImageIcon("icons8_cancel_24px.png"));
+		exitButton.setIcon(new ImageIcon("src/icons8_cancel_24px.png"));
 		exitButton.setBorderPainted(false);
 		exitButton.setFocusable(false);
 		exitButton.addActionListener(this);
@@ -308,13 +308,14 @@ public class PaymentView extends JFrame implements ActionListener {
 		PaymentLayeredPane.add(PaymentMethodPanel2, "card2");
 
 		// set frame
-		ImageIcon appLogo = new ImageIcon("logoCircle100.png");
+		ImageIcon appLogo = new ImageIcon("src/logoCircle100.png");
 		setIconImage(appLogo.getImage());
 		setLocation(0, 100);
 		setTitle("Payment View");
 		setUndecorated(true);
 		getContentPane().setBackground(new Color(0, 0, 0));
 		setFrameLayout();
+		addADishPanel();
 		pack();
 		setVisible(true);
 	}

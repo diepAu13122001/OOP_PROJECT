@@ -9,4 +9,9 @@ public class PaymentController {
 		this.view = new PaymentView(this, model);
 		view.createView();
 	}
+
+	public static void main(String[] args) {
+		PaymentModel model = new PaymentModel();
+		PaymentController p = new PaymentController(model);
+	}
 }

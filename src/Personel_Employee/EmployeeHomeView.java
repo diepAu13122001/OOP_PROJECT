@@ -681,12 +681,12 @@ public class EmployeeHomeView extends JFrame implements ActionListener {
 		billingPanel.add(billTypeComboBox);
 
 		String[] partnerTypeItems = { "All partners", "suppliers", "customers" };
-		JComboBox<Object> billPartnerComboBox = comboBox(billTypeItems, 95, 30, whiteColor, null, 13);
+		JComboBox<Object> billPartnerComboBox = comboBox(partnerTypeItems, 95, 30, whiteColor, null, 13);
 		billingPanel.add(billPartnerComboBox);
 
 		String[] rangeItems = { "Price range", "under 100.000", "under 500.000", "under 1.000.000", "under 1.500.000",
 				"under 2.000.000", "over" };
-		JComboBox<Object> billRangeComboBox = comboBox(billTypeItems, 125, 30, whiteColor, null, 13);
+		JComboBox<Object> billRangeComboBox = comboBox(rangeItems, 125, 30, whiteColor, null, 13);
 		billRangeComboBox.setFont(new Font("Segoe UI", 0, 13));
 		billingPanel.add(billRangeComboBox);
 

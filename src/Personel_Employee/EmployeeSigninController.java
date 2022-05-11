@@ -8,7 +8,6 @@ public class EmployeeSigninController {
 		this.model = model;
 		this.view = new EmployeeSigninView(this, model);
 		view.createSignInView();
-		
 	}
 
 }
