@@ -1,9 +1,15 @@
 package Personel_Employee;
 
 public class Employee_Accountant implements ObserverInterface {
-@Override
-	public void updateSalary(Employee emp) {
-		emp.setSalary((double) (emp.getSalary()+emp.getSalary()*0.1));
+	
+	public Employee_Accountant(String empNo, String empName, Double salary, String position, Double bonus) {
+		super(empNo, empName, salary, position, bonus);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public Double updateSalary() {
+		return this.setSalary((double) (this.getSalary()+this.getSalary()*0.5));
 	}
 
 }
