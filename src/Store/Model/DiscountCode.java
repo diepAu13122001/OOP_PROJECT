@@ -1,4 +1,4 @@
-package Store;
+package Store.Model;
 
 import java.util.*;
 

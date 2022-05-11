@@ -25,7 +25,6 @@ public class DishDetailView extends JFrame {
 	public DishDetailView(DishDetailController controller, DishDetailModel model) {
 		this.model = model;
 		this.controller = controller;
-		createView();
 	}
 
 	public void createView() {

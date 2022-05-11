@@ -1,4 +1,4 @@
-package Worker;
+package Worker.Model;
 
 import org.apache.commons.math3.util.Pair;
 

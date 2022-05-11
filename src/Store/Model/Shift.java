@@ -1,4 +1,4 @@
-package Personel;
+package Store.Model;
 
 import java.util.ArrayList;
 import java.util.List;

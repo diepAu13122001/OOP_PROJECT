@@ -1,4 +1,4 @@
-package Worker;
+package Worker.Model;
 
 public class Worker {
 

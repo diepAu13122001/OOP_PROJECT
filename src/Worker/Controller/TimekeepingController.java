@@ -1,4 +1,7 @@
-package Worker;
+package Worker.Controller;
+
+import Worker.Model.TimekeepingModel;
+import Worker.View.TimekeepingView;
 
 public class TimekeepingController {
     TimekeepingModel model;

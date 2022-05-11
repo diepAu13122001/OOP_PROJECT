@@ -1,4 +1,4 @@
-package Store;
+package Store.View;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -11,7 +11,9 @@ import Customer.Controller.OrderController;
 import Customer.Model.OrderModel;
 import Employee.Controller.EmployeeSigninController;
 import Employee.Model.EmployeeSigninModel;
-import Worker.*;
+import Store.Controller.MainHomeController;
+import Worker.Controller.TimekeepingController;
+import Worker.Model.TimekeepingModel;
 
 // lop lam giao dien (edit code)
 

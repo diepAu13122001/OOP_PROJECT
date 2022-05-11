@@ -2,7 +2,7 @@ package Menu.Model;
 
 import java.util.ArrayList;
 
-import Personel.*;
+import Store.Model.Shift;
 import SupportClasses.MyCurency;
 
 public abstract class Food {

@@ -5,8 +5,8 @@ import java.util.*;
 
 import Menu.Model.Food;
 import Menu.Model.Menu;
-import Store.DiscountCode;
-import Store.DiscountCode_Dao;
+import Store.Model.DiscountCode;
+import Store.Model.DiscountCode_Dao;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.FormulaEvaluator;

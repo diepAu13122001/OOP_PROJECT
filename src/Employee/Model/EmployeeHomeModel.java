@@ -3,9 +3,8 @@ package Employee.Model;
 import java.io.File;
 import java.text.DecimalFormat;
 import java.util.*;
-import Personel.*;
 
-public class EmployeeHomeModel extends Personel {
+public class EmployeeHomeModel {
 	private File URLList; // cach nhap duong link tu ??? (.txt or excel)
 
 	public EmployeeHomeModel() {

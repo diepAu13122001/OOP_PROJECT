@@ -12,4 +12,9 @@ public class DishDetailController {
         this.view = new DishDetailView(this, model);
         view.createView();
     }
+
+    public static void main(String[] args) {
+        DishDetailModel model = new DishDetailModel();
+        DishDetailController controller = new DishDetailController(model);
+    }
 }

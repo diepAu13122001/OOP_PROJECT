@@ -1,6 +1,8 @@
-package Worker;
+package Worker.View;
 
-import Store.MainHomeController;
+import Store.Controller.MainHomeController;
+import Worker.Controller.TimekeepingController;
+import Worker.Model.TimekeepingModel;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;

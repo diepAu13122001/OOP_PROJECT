@@ -1,4 +1,6 @@
-package Store;
+package Store.Controller;
+
+import Store.View.MainHomeView;
 
 public class MainHomeController {
 	MainHomeView view;
