@@ -2,9 +2,9 @@ package model.personel_employee;
 
 public interface Subject {
 
-	public void registerObserver(DraftObserverInterface o);
+	public void registerObserver(ObserverInterface o);
 
-	public void removeObserver(DraftObserverInterface o);
+	public void removeObserver(ObserverInterface o);
 
-	public void notifyObservers(DraftObserverInterface o);
+	public void notifyObservers(ObserverInterface o);
 }
