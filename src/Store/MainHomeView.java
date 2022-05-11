@@ -7,9 +7,11 @@ import java.io.IOException;
 
 import javax.swing.*;
 
-import Customer.*;
-import Personel_Employee.*;
-import Personel_Worker.*;
+import Customer.Controller.OrderController;
+import Customer.Model.OrderModel;
+import Employee.Controller.EmployeeSigninController;
+import Employee.Model.EmployeeSigninModel;
+import Worker.*;
 
 // lop lam giao dien (edit code)
 

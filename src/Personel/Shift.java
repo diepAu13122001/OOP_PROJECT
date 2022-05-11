@@ -3,9 +3,6 @@ package Personel;
 import java.util.ArrayList;
 import java.util.List;
 
-import Customer.TypeOfPayment;
-import Customer.Zalopay;
-
 public abstract class Shift {
 	protected int id; // ma ca (ca so may?)
 	protected String name; // ten ca

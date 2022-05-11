@@ -2,8 +2,10 @@ package Store;
 
 import java.util.*;
 
-import Customer.*;
-import SupportClasses.*;
+import Customer.Model.TypeOfPayment;
+import SupportClasses.LoadDataFromExcelFile;
+import SupportClasses.MyDate;
+import SupportClasses.MyTime;
 
 public class DiscountCode {
 	private String maKhuyenMai; // viet in hoa het
